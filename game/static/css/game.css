@@ -1,0 +1,405 @@
+.ac-game-menu {
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.ac-game-menu-content {
+    width: 21%;
+    position: relative;
+    top: 23.8%;
+    left: 5%;
+}
+
+.ac-game-menu-content-item {
+    font-size: 5vh;
+    background-size: 100% 100%;
+    mask-repeat: no-repeat;
+
+    width: 20vw;
+    height: 9vh;
+    color: rgb(199, 84, 224);
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    padding: 2vh;
+    background-color: rgba(107, 96, 106, 0.5);
+    cursor: pointer;
+    letter-spacing: 0.5vw;
+    border-radius: 10px;
+}
+
+.ac-game-menu-content-item-single_mode {
+    background-image: url("/static/image/menu/rect01.png");
+}
+
+.ac-game-menu-content-item-multi_mode {
+    background-image: url("/static/image/menu/rect02.png");
+}
+
+.ac-game-menu-content-item-settings {
+    background-image: url("/static/image/menu/rect03.png");
+}
+
+.ac-game-menu-content-item-logout {
+    background-image: url("/static/image/menu/rect04.png");
+}
+
+
+.ac-game-menu-content-item:hover {
+    width: 22vw;
+    height: 10vh;
+    font-size: 6.4vh;
+    transition: 300ms;
+}
+
+.ac-game-playground {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    color: black;
+    background-color: black;
+}
+
+
+.ac-game-settings {
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    /* background-image: url("/static/image/settings/background.jpg"); */
+    background-size: 100% 100%;
+}
+
+.ac-game-settings-audio {
+    display: none;
+}
+
+.ac-game-menu-audio {
+    display: none;
+}
+
+.ac-game-settings-login {
+    height: 68vh;
+    width: 30vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(82, 77, 77, 0.7);
+
+    border-radius: 5px;
+}
+
+.ac-game-settings-username {
+    display: block;
+    height: 11vh;
+}
+
+.ac-game-settings-password {
+    display: block;
+    height: 11vh;
+}
+
+.ac-game-settings-submit {
+    display: block;
+    height: 11vh;
+}
+
+.ac-game-settings-acwing {
+    display: block;
+    height: 11vh;
+}
+
+
+.ac-game-settings-item {
+    width: 100%;
+    height: 100%;
+}
+
+.ac-game-settings-password-confirm {
+    display: block;
+    height: 11vh;
+}
+
+.ac-game-settings-item>div {
+    margin-left: 2px;
+    line-height: 1.9vh;
+    font-size: 1.9vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    color: white;
+    width: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.ac-game-settings-item>input {
+    width: 80%;
+    line-height: 5vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.ac-game-settings-item>button {
+    width: 80%;
+    line-height: 5vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 40px;
+    border-radius: 8px;
+
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+#ac-game-settings-submit {
+    width: 43%;
+    height: 5vh;
+    border-radius: 8px;
+    font-size: 2vh;
+    line-height: 2vh;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+.ac-game-settings-option {
+    color: white;
+    font-weight: 300;
+    display: inline;
+    float: right;
+    font-size: 1.4vh;
+    cursor: pointer;
+    margin-right: 18px;
+}
+
+.ac-game-settings-item>button:hover {
+    /* Green */
+    background-color: #008CBA;
+    color: white;
+}
+
+.ac-game-settings-login-title {
+    color: rgb(255, 255, 255);
+    font-size: 4.4vh;
+    text-align: center;
+    height: 7vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+/* style="width: 100%;height: 100%;object-fit: cover;position: absolute;top: 0;left: 0;" autoplay="autoplay" loop="loop" muted="muted" */
+
+.ac-game-settings-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ac-game-settings-error-messages {
+    color: red !important;
+    font-size: 0.9vh;
+    display: inline;
+    float: left;
+    font-weight: 300;
+    margin-left: 18px;
+}
+
+.ac-game-settings-acwing>img {
+    cursor: pointer;
+    position: relative;
+    border-width: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ac-game-settings-acwing>div {
+    color: white;
+    font-weight: 300;
+    font-size: 1.6vh;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ac-game-settings-acwing:hover {
+    border-color: #008CBA;
+}
+
+.ac-game-settings-register {
+    height: 79vh;
+    width: 30vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(82, 77, 77, 0.7);
+
+    border-radius: 5px;
+}
+
+.ac-game-selectoption {
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-image: url("/static/image/playground/option/option-background.jpg");
+}
+
+.ac-game-selectoption-menu {
+    height: 6.9vh;
+    position: relative;
+    width: 100%;
+    height: 6.7vh;
+    background-size: 100% 6.7vh;
+    border-radius: 0px 0px 5px 5px;
+    mask-repeat: no-repeat;
+    background-image: url("/static/image/playground/menu/menu.png");
+}
+
+.ac-game-selectoption-photo {
+    float: right;
+    padding-right: 0.9%;
+    padding-left: 3%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.ac-game-selectoption-photo-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    border-radius: 50%;
+    background-image: "https://cdn.acwing.com/media/user/profile/photo/119954_md_ce603bf721.jpg";
+}
+
+.ac-game-selectoption-username {
+    float: left;
+    color: white;
+    font-weight: 440;
+    font-size: 2.9vh;
+    line-height: 6.9vh;
+    padding-left: 3%;
+    font-family: 'FZShuTi';
+}
+
+.ac-game-selectoption-back {
+    float: right;
+    margin-right: 0.9%;
+    margin-left: 0.7%;
+    cursor: pointer;
+    background-color: rgba(131, 114, 143, 0.7);
+    font-size: 2.9vh;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 4px;
+    line-height: 4.9vh;
+    margin-top: 1.0vh;
+    margin-bottom: 1.0vh;
+    color: rgb(106, 218, 243);
+    -webkit-transition-duration: 0.4s;
+    width: 8%;
+    /* Safari */
+    transition-duration: 0.4s;
+    text-align: center;
+    font-family: 'FZShuTi';
+}
+
+.ac-game-selectoption-back:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.ac-game-selectoption-creater {
+    float: right;
+    margin-right: 0.7%;
+    margin-left: 1%;
+    cursor: pointer;
+    background-color: rgba(131, 114, 143, 0.7);
+    font-size: 3.2vh;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 4px;
+    line-height: 4.9vh;
+    margin-top: 1.0vh;
+    margin-bottom: 1.0vh;
+    color: rgb(106, 218, 243);
+    -webkit-transition-duration: 0.4s;
+    width: 10%;
+    /* Safari */
+    transition-duration: 0.4s;
+    text-align: center;
+    font-family: 'FZShuTi';
+}
+
+.ac-game-selectoption-creater:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+
+.ac-game-selectoption-item {
+    transform: translate(-50%, -50%);
+    position: relative;
+    top: 44.4vh;
+    left: 18.8vw;
+    height: 70vh;
+    width: 17.6vw;
+    background-size: 100% 100%;
+    mask-repeat: no-repeat;
+    background-image: url("/static/image/playground/option/music/Infinity Heaven.jpg");
+    border-radius: 10px;
+    border: 4px solid #96C2F1;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.ac-game-selectoption-item:hover {
+    border-width: 8px;
+    height: 71vh;
+    width: 18vw;
+}
+
+.ac-game-selectoption-item-info {
+    position: relative;
+    background-color: rgba(58, 44, 71, 0.7);
+    width: 100%;
+    height: 6.4vh;
+    border-radius: 10px 10px 6px 6px;
+    color: white;
+    font-size: 4.0vh;
+    font-weight: 450;
+    text-shadow: 18px;
+    text-align: center;
+    line-height: 6.4vh;
+    font-family: 'FZShuTi';
+    color: #f9f2fa;
+}
+
+.ac-game-option-settings {
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-image: url("/static/image/playground/option/option-background.jpg");
+}

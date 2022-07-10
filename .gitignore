@@ -1,0 +1,14 @@
+**/__pycache__
+*.swp
+*.mp4
+*.mp3
+*.jpg
+*.jpeg
+*.gif
+game/static/image/menu/menu.png
+game/static/image/menu/rect01.png
+game/static/image/menu/rect02.png
+game/static/image/menu/rect03.png
+game/static/image/menu/rect04.png
+game/static/image/playground/menu/menu.png
+game/static/image/settings/ACWINGimg.png
