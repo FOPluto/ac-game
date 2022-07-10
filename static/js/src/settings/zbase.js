@@ -219,9 +219,6 @@ export class Settings {
                 }
             }
         });
-        console.log("***");
-        console.log(this.username);
-        console.log(this.photo);
     }
 
     //在远程服务器上登出
@@ -278,10 +275,6 @@ export class Settings {
                 if(resp.result === "success") {
                     outer.username = resp.username;
                     outer.photo = resp.photo;
-
-                    console.log(outer.username);
-
-                    console.log(outer.photo);
 
                     outer.hide();
                     outer.root.menu.show();

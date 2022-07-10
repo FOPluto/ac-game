@@ -39,34 +39,20 @@ export class selectOption{
     创作者模式
 </div>
 <div class="ac-game-selectoption-photo">
-    <img class="ac-game-selectoption-photo-image" src="" alt="some_text">
+    <img id="ac-game-selectoption-images" class="ac-game-selectoption-photo-image" src="" alt="some_text">
     </img>
 </div>
-<div class="ac-game-selectoption-username"> 
+<div id="ac-game-selectoption-usernames" class="ac-game-selectoption-username"> 
     欢迎回来! 
 </div>
 `);
+        this.$username_box = $("#ac-game-selectoption-usernames");
+        this.$photo_box = $("#ac-game-selectoption-images");
         let outer = this;
         let $username = this.$playerInfo.find(".ac-game-selectoption-username");
         let $photo = this.$playerInfo.find(".ac-game-selectoption-photo > img");
-
-        $.ajax({
-            url: "https://app2361.acapp.acwing.com.cn/settings/getinfo/",
-            type: "GET",
-            data: {
-                platform: outer.platform,
-            },
-            success: function(resp){
-                console.log(resp.username);
-                console.log(resp.photo);
-                $username.html("欢迎回来！" + resp.username);
-                $photo.attr(resp.photo);
-            }
-        });
         //之后再完善创作者模式
     }
-
-
 
     add_listening_events(){
         let outer = this;
@@ -76,7 +62,6 @@ export class selectOption{
             outer.root.menu.show();
         });
     }
-
     //在数据库中查找所有的游戏
     checkGameInfo(){
         this.$items = [];
@@ -113,12 +98,12 @@ export class selectOption{
         this.$content.append($item_box);
         //上面的可能之后再写
     } 
-    
     start(){
         this.checkGameInfo();
     }
-
     show(){
+        this.$username_box.html("欢迎回来！" + this.root.settings.username);
+        this.$photo_box.attr(this.root.settings.photo);
         this.$selectMenu.show();
     }
     hide(){
